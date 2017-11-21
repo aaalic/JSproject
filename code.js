@@ -14,22 +14,16 @@ function renderMovie(movie){
 }
 
 function changeStarRating(rating){
-    for(let i=1; i<=5; i++){
-        let star = document.getElementById("star" + i);
-        if (i <= rating){
-          star.classList.add("filled");
-        } else {
-          star.classList.remove("filled");
-        }
-      }
+    $(".filled").removeClass("filled");
+    for(let i = 1; i <= rating; i++){
+      $("[data-rating-id=" + i + "]").addClass("filled");
     }
-      
-    for(let i=1; i<=5; i++){
-        let star = document.getElementById("star" + i);
-        star.addEventListener("click", function(){
-          changeStarRating(i);
-        });
+  }
   
-    }
-    
+  $(".stars").on("click", "span", function(e){
+    let star = $(e.target);
+    let rating = parseInt(star.attr("data-rating-id"));
+    changeStarRating(rating);
+  });
+
 renderMovie(movieData);
