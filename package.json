@@ -1,0 +1,26 @@
+{
+  "name": "jsproject",
+  "version": "1.0.0",
+  "description": "js projekt",
+  "main": "code.js",
+  "scripts": {
+    "styles": "lessc style.less style.css",
+    "test": "t"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaalic/JSproject.git"
+  },
+  "keywords": [
+    "js"
+  ],
+  "author": "Frida",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aaalic/JSproject/issues"
+  },
+  "homepage": "https://github.com/aaalic/JSproject#readme",
+  "devDependencies": {
+    "less": "^2.7.3"
+  }
+}
