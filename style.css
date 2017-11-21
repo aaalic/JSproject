@@ -30,3 +30,14 @@ h1{
     font-size: 2.5em;
     text-decoration: underline;
 }
+
+.stars .filled {
+    color: black;
+}
+
+.stars span {
+    color: rgb(180, 180, 180);
+    user-select: none;
+    cursor: pointer;
+}
+  
