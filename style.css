@@ -1,43 +1,38 @@
+body {
+  background-color: #6c94be;
+}
 .contentBlock {
-    width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    background-color: beige;
-    padding: 15px;
-  }
-
-.textContent{
-    width: 300px;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 10px;
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  background-color: beige;
+  padding: 15px;
 }
-  
+.textContent {
+  width: 300px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
 #myImage {
-    max-width: 300px;
-    max-height: 400px;
-  }
-
-
-body{
-    font-family: Courier New, Courier, monospace;
+  max-width: 300px;
+  max-height: 400px;
 }
-
-h1{
-    font-size: 2.5em;
-    text-decoration: underline;
+body {
+  font-family: Courier New, Courier, monospace;
 }
-
+h1 {
+  font-size: 2.5em;
+  text-decoration: underline;
+}
 .stars .filled {
-    color: black;
+  color: black;
 }
-
 .stars span {
-    color: rgb(180, 180, 180);
-    user-select: none;
-    cursor: pointer;
+  color: #b4b4b4;
+  user-select: none;
+  cursor: pointer;
 }
-  
