@@ -1,7 +1,6 @@
 import {movieData} from "./data";
 import * as $ from "jquery";
 
-
 function renderMovie(movie){
     document.getElementById("myImage").src = movie.img;
     document.getElementById("myH1").innerText = movie.title;
@@ -24,7 +23,7 @@ function changeStarRating(rating){
     }
   }
   
-  $(".stars").on("click", "span", function(e){
+  $(".stars").on("click", "span", (e) => {
     let star = $(e.target);
     let rating = parseInt(star.attr("data-rating-id"));
     changeStarRating(rating);
