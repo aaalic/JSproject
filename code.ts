@@ -1,6 +1,14 @@
-import { Review } from "./interfaces";
+import * as angular from "angular";
+
+let app = angular.module("myawesomeapp", []);
+
+app.controller("myawesomecontroller", function(){
+  this.message = "Hello world!";
+});
+
 import {movieData} from "./data";
 import * as $ from "jquery";
+import { Review } from "./interfaces";
 
 function renderMovie(movie: Review){
     document.getElementById("myImage").src = movie.img;
