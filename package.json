@@ -4,8 +4,10 @@
   "description": "js projekt",
   "main": "code.js",
   "scripts": {
-    "styles": "lessc style.less style.css",
-    "test": "t"
+    "bundle": "webpack",
+    "less": "lessc ./style.less distribution/style.css",
+    "copyindex": "cp index.html distribution/index.html",
+    "build": "npm run bundle && npm run less && npm run copyindex"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,10 @@
   },
   "homepage": "https://github.com/aaalic/JSproject#readme",
   "devDependencies": {
-    "less": "^2.7.3"
+    "less": "^2.7.3",
+    "webpack": "^3.8.1"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1"
   }
 }

@@ -1,3 +1,7 @@
+let movieData = require("./data");
+let $ = require("jquery");
+
+
 function renderMovie(movie){
     document.getElementById("myImage").src = movie.img;
     document.getElementById("myH1").innerText = movie.title;
