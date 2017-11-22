@@ -1,7 +1,8 @@
+import { Review } from "./interfaces";
 import {movieData} from "./data";
 import * as $ from "jquery";
 
-function renderMovie(movie){
+function renderMovie(movie: Review){
     document.getElementById("myImage").src = movie.img;
     document.getElementById("myH1").innerText = movie.title;
     document.getElementById("myP").innerText = movie.description;
